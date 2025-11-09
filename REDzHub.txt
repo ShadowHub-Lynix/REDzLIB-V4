@@ -1,0 +1,107 @@
+-- Carregando a biblioteca RedzLib V4
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/wx-sources/RedzLibV4/main/Source.lua"))()
+
+-- Criando a janela
+local Window = Library:MakeWindow({
+  Title = "REDz HUB : BROOKHAVEN versao crackeada",
+  SubTitle = "CRACKEADO",
+  LoadText = "CRACKEADO",
+  Flags = "redz Hub | Example.lua"
+})
+
+-- Definindo o tema
+Library:SetTheme("Default")  -- Troque pelo nome do tema desejado
+Library:SetTransparency(0.1)  -- Definindo transparência (0 a 1)
+
+-- Criando uma notificação
+local Notify = Library:MakeNotify({
+  Title = "CRACKEADO",
+  Text = "Avatar copiado com sucesso, agora você pode fazer tudo normalmente",
+  Time = 5  -- Duração da notificação em segundos
+})
+
+-- Criando uma aba
+local Tab = Window:MakeTab({
+  Name = "CRACKEADO",
+  Icon = "Settings"  -- Ícone para a aba
+})
+
+-- Criando uma seção dentro da aba
+local Section = Tab:AddSection({"AVAtaR copiADo com suCeco"})
+
+-- Criando um parágrafo dentro da aba
+local Paragraph = Tab:AddParagraph({"Tex lo", "Funcao Em Beta Use com cudaido"})
+
+-- Criando um rótulo de texto
+local TextLabel = Tab:AddLabel({"CRACKEADO"})
+
+-- Criando um rótulo de imagem
+local ImageLabel = Tab:AddLabel({"CRACKEADO PELOS MASTERS", "CRACKEADO", "rbxassetid://1234567890"})  -- Troque pelo ID real da imagem
+
+-- Criando um botão
+local Button = Tab:AddButton({
+  Name = "Matar Jogador CRACKEADO",
+  Callback = function()
+    print("Botão clicado!")
+    Library:MakeNotify({
+      Title = "Alerta!",
+      Text = "Você clicou no botão!",
+      Time = 3
+    })
+  end
+})
+
+-- Criando um toggle (caixa de seleção)
+local Toggle = Tab:AddToggle({
+  Name = "fliNG joGador CRACKEADO",
+  Default = false,
+  Callback = function(Value)
+    if Value then
+      print("/fling")
+    else
+      print("F a.")
+    end
+  end
+})
+
+-- Criando um dropdown (lista suspensa)
+local Dropdown = Tab:AddDropdown({
+  Name = "Selecionar Jogador",
+  Options = {"CRACKED CRACKED", "Opção 2", "CRACKEADO"},
+  Default = {"Opção 2"},
+  MultSelect = false,
+  Callback = function(Value)
+    print("Você escolheu: " .. Value)
+  end
+})
+
+-- Criando um slider (controle deslizante)
+local Slider = Tab:AddSlider({
+  Name = "CRACKEADO Velocidade Usuarario",
+  MinValue = 1,
+  MaxValue = 10,
+  Default = 5,
+  Increase = 1,
+  Callback = function(Value)
+    print("Valor ajustado para: " .. Value)
+  end
+})
+
+-- Criando um botão de Discord (link para o servidor)
+Tab:AddDiscordInvite({
+  DiscordTitle = "CRACKEADO",
+  DiscordIcon = "rbxassetid://15298567397",  -- Troque pelo ID correto da imagem do ícone
+  DiscordLink = "CRACKEADO"  -- Link do seu servidor Discord
+})
+
+-- Criando um botão de minimizar
+Window:AddMinimizeButton({
+  Button = {
+    Image = "rbxassetid://15298567397"  -- Troque pelo ID correto da imagem do botão
+  },
+  UICorner = {true, CornerRadius = UDim.new(0.5, 0)},
+  UIStroke = {false, {}}
+})
+
+-- Aguardar a notificação terminar
+Notify:Wait()
