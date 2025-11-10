@@ -1080,7 +1080,7 @@ function redzLib:MakeWindow(Configs)
         AnchorPoint = Vector2.new(1, 0.5),
         Position = UDim2.new(1, -10, 0.5, 0),
         BackgroundTransparency = 1,
-        Image = "rbxassetid://15155219405",
+        Image = "rbxassetid://129905552600881",
         ImageColor3 = Theme["Color Stroke"]
       }), "Stroke")
       
@@ -2195,5 +2195,6 @@ function redzLib:MakeWindow(Configs)
   end
   return Window
 end
+
 
 return redzLib
